@@ -1,0 +1,5 @@
+body,html{font-family:"Open Sans",sans-serif}
+body{margin:0}
+.center{text-align:center}
+.inputForm__search{height:3.5rem;width:28.8125rem;border-radius:.25rem}
+.inputForm__button{height:2.25rem;width:4.5rem;border-radius:.25rem;padding:.625rem,1.25rem,.625rem,1.25rem}
