@@ -22,7 +22,8 @@
         height: 34px;// this comes out to 56px with the padding
         width: 419px; // this comes out to 461px with the padding
         padding:10px 20px;
-        border: 1px solid var(--gray);
+        border: 1px solid var(--gray);        transition: all 0.5s ease;
+
         &:focus{
             outline:var(--greenH);
             border:1px solid var(--greenH)
