@@ -15,3 +15,4 @@ If you want to run the Gulp file to see the automationprocess for compiling the 
 ```bash
 gulp
 ```
+This project has a basic mobile responsive query set. All of the SCSS files can be found in src/scss
