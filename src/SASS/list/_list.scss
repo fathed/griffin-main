@@ -89,7 +89,31 @@
                         &.half {
                             position: relative;
 
+
+
                             &:last-of-type {
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    border-radius: 0 4px 4px 0;
+                                    width: 16px;
+                                    background: var(--lightgray);
+                                }
+
+                                &:after {
+                                    font-family: "Font Awesome 6 Pro";
+                                    content: "";
+                                    font-weight: 900;
+                                    position: absolute;
+                                    right: 4px;
+                                    color: var(--silver);
+                                    top: 7px;
+                                    z-index: 0;
+                                }
+
                                 i {
                                     &:before {
                                         content: '\f089';
