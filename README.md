@@ -11,7 +11,7 @@ npm run dev
 ```
 # About this Project
 This project is build using NODEJS and Pug. The SCSS is in BEM and compiled using Gulp.
-If you want to run the Gulp file to see the automationprocess for compiling the CSS you will need to just run the Gulp command.
+If you want to run the Gulp file to see the automation process for compiling the CSS you will need to just run the Gulp command.
 ```bash
 gulp
 ```
