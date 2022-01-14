@@ -1,5 +1,5 @@
 :root{--white:#ffffff;--blue:#3498db;--silver:#ecf0f1;--gray:#bdc3c7;--lightgray:#e3e3e3;--black:#282828;--darkgray:#7f8c8d;--darkblue:#2c3e50;--yellow:#e67e22;--green:#27ae60;--blueH:#3498db;--greenH:#2ecc71;--red:#e74c3c}
-body,html{font-family:"Open Sans",sans-serif;font-size:1rem}
+body,html{font-family:"Open Sans",sans-serif;font-size:1rem;margin-bottom:2.5rem}
 body{margin:0;background:#f5f5f5;color:var(--black)}
 .center{text-align:center}
 .hidden{display:none}
@@ -29,6 +29,8 @@ header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--
 #list .item__body--parkinglotScore{border-bottom:.0625rem solid var(--silver);padding:.1875rem 0}
 #list .item__body--address,#list .item__body--parkinglotScore{border-top:.0625rem solid var(--silver)}
 #list .item__body--address{padding-top:.1875rem}
+#recordCount{position:fixed;padding:.625rem;bottom:-.625rem;right:.625rem;left:.625rem;font-size:.6875rem;display:flex;justify-content:center}
+#recordCount div{background:var(--white);padding:.625rem;border-radius:.625rem .625rem 0 0;box-shadow:0 -.0625rem .6875rem var(--silver)}
 @media only screen and (max-width:20rem){
 form{width:16.25rem!important}
 }

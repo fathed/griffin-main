@@ -13,6 +13,7 @@ block layout-content
    
     section
      div#list
+      div#recordCount
       p#startMsg Use the search tool above to find a parkinglot in your area
      
 
@@ -21,6 +22,8 @@ block layout-content
    var data = !{JSON.stringify(yyy)}
    console.log(data)
    if(data){
+         document.getElementById("recordCount").innerHTML +='<div>'+data.length+' records retrieved</div>';
+
     for(var i = 0; i < data.length; i++) {
       var html = '<div class="item">';
       var obj = data[i];
