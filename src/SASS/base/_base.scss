@@ -1,16 +1,13 @@
 @import 'fonts';
 @import 'colors';
+@import 'html';
 
 
 
-html,
-body {
-    font-family: 'Open Sans', sans-serif;
-}
 
 body {
     margin: 0;
-    background: var(--white);
+    background: #f5f5f5;
     color: var(--black)
 }
 
@@ -29,4 +26,4 @@ a {
     }
 }
 
-@import 'html';
+@import 'header';

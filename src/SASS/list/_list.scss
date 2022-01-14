@@ -2,8 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // flex-direction: column;
-
     .item {
         display: flex;
         padding: 20px;
@@ -15,7 +13,7 @@
         transition: all 0.5s ease;
         height: 190px;
         width: 40%;
-    background: var(--white);
+        background: var(--white);
 
         &:hover {
 
@@ -72,12 +70,58 @@
             }
 
             &--rating {
-            	color:var(--yellow)
+                display: flex;
+                color: var(--silver);
+
+                .star {
+                    font-size: 20px;
+                    padding: 4px;
+                    border-radius: 4px;
+                    margin-right: 3px;
+                    background: var(--lightgray);
+
+                    &__red {
+                        background: var(--red);
+
+                        &.half {
+                            position: relative;
+
+                            &:last-of-type {
+                                i {
+                                    &:before {
+                                        content: '\f089';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
-            &--parkinglotScore {}
 
-            &--address {}
+            &--parkinglotScore,
+            &--link,
+            &--review {
+                font-size: 13px;
+
+            }
+
+
+            &--parkinglotScore {
+                border-bottom: 1px solid var(--silver);
+                padding: 3px 0;
+            }
+
+            &--link {}
+
+            &--address,
+            &--parkinglotScore {
+                border-top: 1px solid var(--silver);
+            }
+
+            &--address {
+                padding-top: 3px;
+            }
         }
     }
 }
