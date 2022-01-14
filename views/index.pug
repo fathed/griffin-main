@@ -13,6 +13,7 @@ block layout-content
    
     section
      div#list
+      p#startMsg Use the search tool above to find a parkinglot in your area
      
 
 
@@ -69,7 +70,10 @@ block layout-content
       html+='<div class="item__body--link"><a href="'+obj.url+'" title="Visit this in Yelp" target="_blank">Read more</a>';
       html += '</div>';
       html += '</div>';
+
       document.getElementById("list").innerHTML +=html
+      document.getElementById("startMsg").classList.add("hidden");
+
      }
    }
 
