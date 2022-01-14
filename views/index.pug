@@ -79,11 +79,11 @@ block layout-content
       html += '</a></div>';
 
  
-      html+='<div class="item__body--address">'
+      html+='<div class="item__body--address"><a href="https://maps.google.com/?q='+obj.location.display_address[0]+ ' '+obj.location.display_address[1]+'" title="Open in Google Maps" target="_blank">'
       for(var j = 0; j < obj.location.display_address.length; j++) {
         html+='<div>'+obj.location.display_address[j]+'</div>';
       }    
-      html += '</div>';
+      html += '</a></div>';
 
            //parking lot score
       html+='<div class="item__body--parkinglotScore">Parking lot score:<strong> '+Math.ceil(score)+'</strong></div>';
