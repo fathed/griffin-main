@@ -1,4 +1,7 @@
 # Griffin Code Challenge
+The goal is to build a web app that finds and displays the lowest rated parking lots in a given region, using the Yelp API.
+
+# Set-up the project
 To start this project you will first need to run 
 ```bash
 npm install
