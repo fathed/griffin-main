@@ -48,7 +48,7 @@ block layout-content
       //star rating
       html+='<div class="item__body--rating">';
       for(var p= 0;p<5;p++){
-      if(p <= obj.rating){
+      if(p <= obj.rating-1){
         html +='<div class="star star__red '
 
         if(obj.rating % 1 ){
@@ -84,7 +84,8 @@ block layout-content
       html += '</a></div>';
 
            //parking lot score
-      html+='<div class="item__body--parkinglotScore">Parking lot score:<strong> '+Math.floor(score)+'</strong></div>';
+           
+      html+='<div class="item__body--parkinglotScore">Parking lot score:<strong> '+Math.ceil(score)+'</strong></div>';
 
 
       html+='<div class="item__body--link"><a href="'+obj.url+'" title="Visit this in Yelp" target="_blank">Read more</a>';
