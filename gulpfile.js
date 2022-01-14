@@ -1,7 +1,7 @@
 /*
  * Created on Tue October 14 2021
  *
- * @author J Gibbens <j.gibbens@alight.com>
+ * @author J Gibbens <james.gibbens@gmail.com>
  */
 
 const { watch, src, dest, series, gulp } = require('gulp');
