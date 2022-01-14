@@ -9,7 +9,7 @@ header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--
 .inputForm{width:100%;display:flex;align-items:center;justify-content:center}
 .inputForm form{display:flex;align-items:center}
 .inputForm__button,.inputForm__search{border-radius:.25rem}
-.inputForm__button:hover,.inputForm__search:hover{border:.0625rem solid var(--greenH)}
+.inputForm__button:hover,.inputForm__search:hover{color:var(--greenH);border:.0625rem solid var(--greenH)}
 .inputForm__search{height:2.125rem;width:26.1875rem;padding:.625rem 1.25rem;border:.0625rem solid var(--gray);transition:all .5s ease}
 .inputForm__search:focus{outline:var(--greenH);border:.0625rem solid var(--greenH)}
 .inputForm__button{display:flex;align-items:center;justify-content:center;font-size:.75rem;height:2.25rem;width:4.5rem;padding:.625rem 1.25rem;border:.0625rem solid var(--gray);margin-right:.625rem;background:var(--white);cursor:pointer;transition:all .5s ease}

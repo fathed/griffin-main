@@ -18,7 +18,7 @@
 
     &__search,
     &__button {
-        &:hover {
+        &:hover {    color:var(--greenH);
             border: 1px solid var(--greenH)
         }
     }
@@ -33,6 +33,7 @@
 
 
         &:focus {
+        
             outline: var(--greenH);
             border: 1px solid var(--greenH)
         }
