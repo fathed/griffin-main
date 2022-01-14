@@ -1,0 +1,10 @@
+extends layout
+
+block layout-content
+  div.list
+    if (yyy.length)
+    for result in yyy
+      div.item
+        div #{result.name}
+        div #{result.rating}
+        img(src=result.image_url )

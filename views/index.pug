@@ -1,0 +1,73 @@
+extends layout
+
+block layout-content
+  header JGibbens: #[strong Coding Challenge]
+  main
+   section
+    div.inputForm
+     form(action='/', method='POST')
+      input(type='text', name='fname', value='', placeholder="Enter location").inputForm__search
+      input(type='submit', value='Submit').inputForm__button
+    section
+     div#list
+     
+
+
+  script.
+   var data = !{JSON.stringify(yyy)}
+   console.log(data)
+   if(data){
+    for(var i = 0; i < data.length; i++) {
+      var html = '<div class="item">';
+      var obj = data[i];
+      var score = ( obj.review_count * obj.rating ) / (obj.review_count + 1);
+
+      // show the image
+      html+='<div class="item__img">';
+     
+      if(obj.image_url== null || obj.image_url== "" || obj.image_url== undefined){
+        html += '<div class="missing_image"><i class="fas fa-image"></i></div>'
+      }else{  
+        html+='<img src="' + obj.image_url +'">';
+      }
+
+     
+      html += '</div>';
+      html+='<div class="item__body">';
+
+      //name
+      html+='<div class="item__body--name">'+obj.name+'</div>';
+
+      //star rating
+      html+='<div class="item__body--rating">';
+      for(var p= 0;p<obj.rating;p++){
+        html +='<i class="fas fa-star"></i>'
+      }
+      html += '</div>';
+
+      // review count
+      html+='<div class="item__body--review">'+obj.review_count;
+      if(obj.review_count<2){
+        html+=' review'
+      }else{
+        html+=' reviews'
+      }
+      html += '</div>';
+
+      //parking lot score
+      html+='<div class="item__body--parkinglotScore">Parking lot score:<strong> '+Math.ceil(score)+'</strong></div>';
+
+      html+='<div class="item__body--address">'
+      for(var j = 0; j < obj.location.display_address.length; j++) {
+        html+='<div>'+obj.location.display_address[j]+'</div>';
+      }    
+      html += '</div>';
+
+      html+='<div class="item__body--link"><a href="'+obj.url+'" target="_blank">Read more</a>';
+      html += '</div>';
+      html += '</div>';
+      document.getElementById("list").innerHTML +=html
+     }
+   }
+
+             

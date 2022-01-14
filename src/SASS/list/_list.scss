@@ -1,0 +1,83 @@
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // flex-direction: column;
+
+    .item {
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        flex-grow: 1;
+        border-radius: 4px;
+        border: 1px solid var(--silver);
+        cursor: pointer;
+        transition: all 0.5s ease;
+        height: 190px;
+        width: 40%;
+    background: var(--white);
+
+        &:hover {
+
+            box-shadow: 0 0 10px var(--gray);
+        }
+
+
+        &__img {
+            border-radius: 4px;
+            height: 150px;
+            width: 150px;
+            margin-right: 20px;
+            overflow: hidden;
+            transform: translateZ(0);
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            display: flex;
+
+            .missing_image,
+            img {
+                height: 150px;
+                width: 150px;
+                border-radius: 4px;
+                vertical-align: middle;
+                box-sizing: border-box;
+            }
+
+            img {}
+
+            .missing_image {
+                background: var(--silver);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 80px;
+                color: darkgrey;
+            }
+        }
+
+        &__body {
+
+            &--parkinglotScore,
+            &--address,
+            &--rating,
+            &--review {
+                margin-bottom: 5px;
+
+            }
+
+            &--name {
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            &--rating {
+            	color:var(--yellow)
+            }
+
+            &--parkinglotScore {}
+
+            &--address {}
+        }
+    }
+}
