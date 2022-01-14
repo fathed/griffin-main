@@ -29,7 +29,7 @@ header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--
 #list .item__body--parkinglotScore{border-bottom:.0625rem solid var(--silver);padding:.1875rem 0}
 #list .item__body--address,#list .item__body--parkinglotScore{border-top:.0625rem solid var(--silver)}
 #list .item__body--address{padding-top:.1875rem}
-#recordCount{position:fixed;padding:.625rem;bottom:-.625rem;right:.625rem;left:.625rem;font-size:.6875rem;display:flex;justify-content:center}
+#recordCount{position:fixed;padding:.625rem;bottom:-.625rem;right:.625rem;left:.625rem;font-size:.6875rem;display:flex;justify-content:center;z-index:100}
 #recordCount div{background:var(--white);padding:.625rem;border-radius:.625rem .625rem 0 0;box-shadow:0 -.0625rem .6875rem var(--silver)}
 @media only screen and (max-width:20rem){
 form{width:16.25rem!important}
