@@ -16,17 +16,25 @@
         border-radius: 4px;
     }
 
-
+    &__search,
+    &__button {
+        &:hover {
+            border: 1px solid var(--greenH)
+        }
+    }
 
     &__search {
-        height: 34px;// this comes out to 56px with the padding
+        height: 34px; // this comes out to 56px with the padding
         width: 419px; // this comes out to 461px with the padding
-        padding:10px 20px;
-        border: 1px solid var(--gray);        transition: all 0.5s ease;
+        padding: 10px 20px;
+        border: 1px solid var(--gray);
+        transition: all 0.5s ease;
 
-        &:focus{
-            outline:var(--greenH);
-            border:1px solid var(--greenH)
+
+
+        &:focus {
+            outline: var(--greenH);
+            border: 1px solid var(--greenH)
         }
     }
 
@@ -40,7 +48,13 @@
         padding: 10px 20px;
         border: 1px solid var(--gray);
         margin-right: 10px;
-        background:var(--white);
-        cursor:pointer;
+        background: var(--white);
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:active {
+            color:var(--silver);
+            background: var(--greenH);
+        }
     }
 }
