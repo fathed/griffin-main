@@ -10,8 +10,9 @@ Once the NPM packages install you can start the project by running
 npm run dev
 ```
 # About this Project
-This project is build using NODEJS and Pug. The SCSS isin BEM and compiled using Gulp.
+This project is build using NODEJS and Pug. The SCSS is in BEM and compiled using Gulp.
 If you want to run the Gulp file to see the automationprocess for compiling the CSS you will need to just run the Gulp command.
 ```bash
 gulp
 ```
+This project has a basic mobile responsive query set. All of the SCSS files can be found in src/scss
