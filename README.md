@@ -30,7 +30,13 @@ score = ( number of reviews * rating ) / (number of reviews + 1)
 to understand a bit about why this is needed, read this -  https://fulmicoton.com/posts/bayesian_rating/
 
 
+# Rules
 
+No use of frontend frameworks or libraries such has Angular, React, Vue, JQuery, etc. However other utility JavaScript packages such as axios can be used
+Upload code to a github repo and reply to this email with the link upon completion 
+Include a README with instructions to run the solution in the repo
+
+NOTE: Certain requirements are left out such as the design/specification of certain visual elements. Use your judgement to best fill the gaps (remember this is designed to see how much you know). You will be judged not only on functionality and completing the requirements but also on clean code, modularity, and mobile first designs 
 
 # Set-up the project
 To start this project you will first need to run 
