@@ -21,11 +21,11 @@ header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--
 #list .item__body--address,#list .item__body--parkinglotScore,#list .item__body--rating,#list .item__body--review{margin-bottom:.3125rem}
 #list .item__body--name{font-weight:700;font-size:1.25rem}
 #list .item__body--rating{display:flex;color:var(--silver)}
-#list .item__body--rating .star{font-size:1.25rem;padding:.25rem;border-radius:.25rem;margin-right:.1875rem;background:var(--lightgray)}
+#list .item__body--rating .star{font-size:1.25rem;padding:.25rem;border-radius:.25rem;margin-right:.1875rem;background:var(--lightgray);display:flex;align-items:center;justify-content:center;height:1.625rem;width:1.625rem}
 #list .item__body--rating .star__red{background:var(--red)}
 #list .item__body--rating .star__red.half{position:relative}
 #list .item__body--rating .star__red.half:last-of-type:before{content:"";position:absolute;top:0;bottom:0;right:0;border-radius:0 .25rem .25rem 0;width:1rem;background:var(--lightgray)}
-#list .item__body--rating .star__red.half:last-of-type:after{font-family:"Font Awesome 6 Pro";content:"\f005";font-weight:900;position:absolute;right:.25rem;color:var(--silver);top:.4375rem;z-index:0}
+#list .item__body--rating .star__red.half:last-of-type:after{font-family:"Font Awesome 6 Pro";content:"\f005";font-weight:900;position:absolute;right:.3125rem;color:var(--silver);top:.375rem;z-index:0}
 #list .item__body--rating .star__red.half:last-of-type i:before{content:"\f089"}
 #list .item__body--link,#list .item__body--parkinglotScore,#list .item__body--review{font-size:.8125rem}
 #list .item__body--parkinglotScore{border-bottom:.0625rem solid var(--silver);padding:.1875rem 0}
