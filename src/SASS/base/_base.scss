@@ -18,4 +18,12 @@ body {
     text-align: center;
 }
 
+a {
+    color: var(--blue);
+    text-decoration: none;
+    &:hover{
+        color:var(--blueH);
+    }
+}
+
 @import 'html';

@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--silver);
-    padding: 10px;
+    // background: var(--silver);
+    // padding: 10px;
 
     form {
         display: flex;
@@ -38,6 +38,6 @@
         width: 72px;
         padding: 10px 20px;
         border: 1px solid var(--gray);
-        margin-left: 10px;
+        margin-right: 10px;
     }
 }

@@ -9,16 +9,42 @@
 }
 
 /* Smartphones (portrait) ----------- */
+
+
+
 @media only screen and (max-width : 320px) {
-    /* Styles */
 
+    form {
+        width: 260px !important;
 
+    }
 
 }
+
+
+
+@media only screen and (max-width : 375px) {
+
+    form {
+        width: 300px;
+
+    }
+
+}
+
+
+
+
 
 @media only screen and (max-width : 425px) {
 
     /* Styles */
+
+    header {
+        flex-direction: column;
+        height: 90px;
+    }
+
     .inputForm {
         display: flex;
         justify-content: center;
@@ -27,11 +53,14 @@
     }
 
     form {
-        width: 82%;
+        width: 360px;
+
     }
-.inputForm__button{
-        width: 100%;
-}
+
+    .inputForm__button {
+        display: none;
+    }
+
     .inputForm__search {
         width: 100%;
     }
@@ -47,6 +76,11 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
     /* Styles */
+
+    .inputForm__search {
+        width: 70%;
+    }
+
     #list {
         .item {
             height: 270px;
@@ -88,24 +122,25 @@
 @media only screen and (min-width : 1024px) {
     #list .item {
         width: 20%;
+    }    form {
+        width:410px;
+
     }
 }
 
 @media only screen and (min-width : 1224px) {
-         #list .item {
-        width:40%;
+    #list .item {
+        width: 40%;
     }
 }
 
 
-@media only screen and (min-width : 1440px) {
- 
-}
+@media only screen and (min-width : 1440px) {}
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
-         #list .item {
-        width:30%;
+    #list .item {
+        width: 20%;
     }
 }
 

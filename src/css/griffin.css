@@ -1,14 +1,16 @@
-:root{--white:#ffffff;--blue:#3498db;--silver:#ecf0f1;--gray:#bdc3c7;--black:#282828;--darkgray:#7f8c8d;--darkblue:#2c3e50;--yellow:#e67e22}
+:root{--white:#ffffff;--blue:#3498db;--silver:#ecf0f1;--gray:#bdc3c7;--black:#282828;--darkgray:#7f8c8d;--darkblue:#2c3e50;--yellow:#e67e22;--blueH:#3498db}
 body,html{font-family:"Open Sans",sans-serif}
 body{margin:0;background:var(--white);color:var(--black)}
 .center{text-align:center}
-header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--darkblue);color:var(--silver);font-size:1.125rem;padding:.625rem;height:3.125rem;display:flex;align-items:center}
-.inputForm{width:100%;display:flex;align-items:center;justify-content:center;background:var(--silver);padding:.625rem}
+a{color:var(--blue);text-decoration:none}
+a:hover{color:var(--blueH)}
+header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--darkblue);color:var(--silver);font-size:1.125rem;padding:.625rem;height:3.125rem;display:flex;align-items:center;justify-content:space-between}
+.inputForm{width:100%;display:flex;align-items:center;justify-content:center}
 .inputForm form{display:flex;align-items:center}
 .inputForm__button,.inputForm__search{border-radius:.25rem}
 .inputForm__search{height:2.125rem;width:26.1875rem;padding:.625rem 1.25rem;border:.0625rem solid var(--gray)}
 .inputForm__search:focus{outline:#00f3ff;border:.0625rem solid #00f3ff}
-.inputForm__button{display:flex;align-items:center;justify-content:center;font-size:.75rem;height:2.25rem;width:4.5rem;padding:.625rem 1.25rem;border:.0625rem solid var(--gray);margin-left:.625rem}
+.inputForm__button{display:flex;align-items:center;justify-content:center;font-size:.75rem;height:2.25rem;width:4.5rem;padding:.625rem 1.25rem;border:.0625rem solid var(--gray);margin-right:.625rem}
 #list{display:flex;flex-wrap:wrap;justify-content:center}
 #list .item{display:flex;padding:1.25rem;margin:.625rem;flex-grow:1;border-radius:.25rem;border:.0625rem solid var(--silver);cursor:pointer;transition:all .5s ease;height:11.875rem;width:40%;background:var(--white)}
 #list .item:hover{box-shadow:0 0 .625rem var(--gray)}
@@ -18,23 +20,32 @@ header{position:-webkit-sticky;position:sticky;top:0;z-index:1;background:var(--
 #list .item__body--address,#list .item__body--parkinglotScore,#list .item__body--rating,#list .item__body--review{margin-bottom:.3125rem}
 #list .item__body--name{font-weight:700;font-size:1.25rem}
 #list .item__body--rating{color:var(--yellow)}
+@media only screen and (max-width:20rem){
+form{width:16.25rem!important}
+}
+@media only screen and (max-width:23.4375rem){
+form{width:18.75rem}
+}
 @media only screen and (max-width:26.5625rem){
+header{flex-direction:column;height:5.625rem}
 .inputForm{display:flex;justify-content:center;align-items:center;width:100%}
-form{width:82%}
-.inputForm__button{width:100%}
+form{width:22.5rem}
+.inputForm__button{display:none}
 .inputForm__search{width:100%}
 }
 @media only screen and (min-device-width:48rem) and (max-device-width:64rem){
+.inputForm__search{width:70%}
 #list .item{height:16.875rem;flex-direction:column;justify-content:center;align-items:center}
 #list .item__img{width:100%;justify-content:center;align-items:center;display:flex;margin:0}
 #list .item__img .missing_image,#list .item__img img{height:10.625rem}
 }
 @media only screen and (min-width:64rem){
 #list .item{width:20%}
+form{width:25.625rem}
 }
 @media only screen and (min-width:76.5rem){
 #list .item{width:40%}
 }
 @media only screen and (min-width:114rem){
-#list .item{width:30%}
+#list .item{width:20%}
 }

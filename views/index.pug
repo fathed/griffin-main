@@ -1,13 +1,16 @@
 extends layout
 
 block layout-content
-  header JGibbens: #[strong Coding Challenge]
-  main
-   section
+  header 
+   div.header__title JGibbens: #[strong Coding Challenge]
+   div.header__search
     div.inputForm
      form(action='/', method='POST')
-      input(type='text', name='fname', value='', placeholder="Enter location").inputForm__search
       input(type='submit', value='Submit').inputForm__button
+      input(type='text', name='fname', value='', placeholder="Enter location").inputForm__search
+  main
+   section
+   
     section
      div#list
      
@@ -46,13 +49,13 @@ block layout-content
       html += '</div>';
 
       // review count
-      html+='<div class="item__body--review">'+obj.review_count;
+      html+='<div class="item__body--review"><a href="'+obj.url+'" title="Read reviews" target="_blank">'+obj.review_count;
       if(obj.review_count<2){
         html+=' review'
       }else{
         html+=' reviews'
       }
-      html += '</div>';
+      html += '</a></div>';
 
       //parking lot score
       html+='<div class="item__body--parkinglotScore">Parking lot score:<strong> '+Math.ceil(score)+'</strong></div>';
@@ -63,7 +66,7 @@ block layout-content
       }    
       html += '</div>';
 
-      html+='<div class="item__body--link"><a href="'+obj.url+'" target="_blank">Read more</a>';
+      html+='<div class="item__body--link"><a href="'+obj.url+'" title="Visit this in Yelp" target="_blank">Read more</a>';
       html += '</div>';
       html += '</div>';
       document.getElementById("list").innerHTML +=html
