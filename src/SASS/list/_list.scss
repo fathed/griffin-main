@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    .item {
+    .item {    position: sticky;
+    top: 83px;
         display: flex;
         padding: 20px;
         margin: 10px;
