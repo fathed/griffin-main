@@ -39,6 +39,9 @@ build/Release
 
 # Dependency directories
 node_modules/
+node_modules (Selective Sync Conflict)/
+node_modules (Selective Sync Conflict 1)/
+node_modules (Selective Sync Conflict 2)/
 jspm_packages/
 
 # TypeScript v1 declaration files
