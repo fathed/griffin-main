@@ -46,17 +46,38 @@ block layout-content
       html+='<div class="item__body--name">'+obj.name+'</div>';
 
       //star rating
-      html+='<div class="item__body--rating">';
-      for(var p= 0;p<5;p++){
-      if(p <= obj.rating-1){
-        html +='<div class="star star__red '
 
-        if(obj.rating % 1 ){
-          html += 'half'
+
+        if(obj.rating % 1){
+          html+='<div class="item__body--rating item__body--half">';
+        }else{
+          html+='<div class="item__body--rating">';
+        }
+        
+      for(var p= 0;p<5;p++){
+
+   
+
+
+        if(p <= obj.rating-1){
+          html +='<div class="star star';
+        if(obj.rating >=4  || obj.rating ==5 ){
+          html +='__red'
+        }else if(obj.rating >=3 && obj.rating < 4 ){
+          html +='__darkorange'
+        }else if(obj.rating >=2 && obj.rating < 3 ){
+          html +='__orange'
+        }else if(obj.rating >=0 && obj.rating < 2   ){
+          html +='__yellow'
         }
 
-        html +='"><i class="fas fa-star"></i></div>'
 
+       
+
+          console.log(p + ' : ' +obj.rating)
+        
+
+          html +='"><i class="fas fa-star"></i></div>'
   
       }else{
         html +='<div class="star"><i class="fas fa-star"></i></div>'
@@ -76,6 +97,9 @@ block layout-content
       }
       html += '</a></div>';
 
+     //-  html+='<div class="item__body--rating">';
+     //-   html +=obj.rating
+     //- html +='</div>';
  
       html+='<div class="item__body--address"><a href="https://maps.google.com/?q='+obj.location.display_address[0]+ ' '+obj.location.display_address[1]+'" title="Open in Google Maps" target="_blank">'
       for(var j = 0; j < obj.location.display_address.length; j++) {

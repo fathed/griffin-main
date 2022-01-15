@@ -69,15 +69,18 @@
 
             &--name {
                 font-weight: 700;
-font-size: 14px;
-    margin-bottom: 7px;
+                font-size: 14px;
+                margin-bottom: 7px;
             }
 
             &--rating {
                 display: flex;
                 color: var(--silver);
 
+
+
                 .star {
+                    position: relative;
                     font-size: 20px;
                     padding: 4px;
                     border-radius: 4px;
@@ -89,48 +92,76 @@ font-size: 14px;
                     height: 26px;
                     width: 26px;
 
+                    &__orange {
+                        background: var(--orange);
+                    }
+
+                    &__darkorange {
+                        background: var(--darkorange);
+                    }
+
                     &__red {
                         background: var(--red);
+                    }
 
-                        &.half {
-                            position: relative;
+                    &__yellow {
+                        background: var(--yellow);
+
+                    }
+
+                    &__red,
+                    &__darkorange,
+                    &__orange,
+                    &__yellow {}
 
 
 
-                            &:last-of-type {
+
+
+                }
+            }
+
+            &--half {
+                .star {
+
+                    &__red,
+                    &__darkorange,
+                    &__orange,
+                    &__yellow {
+                        &:last-child {
+                            color: green;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: -1px;
+                                border-radius: 0 4px 4px 0;
+                                width: 18px;
+                                background: var(--lightgray);
+                            }
+
+                            &:after {
+                                font-family: "Font Awesome 6 Pro";
+                                content: "";
+                                font-weight: 900;
+                                position: absolute;
+                                right: 5px;
+                                color: var(--silver);
+                                top: 6px;
+                                z-index: 0;
+                            }
+
+                            i {
                                 &:before {
-                                    content: "";
-                                    position: absolute;
-                                    top: 0;
-                                    bottom: 0;
-                                    right: -1px;
-                                    border-radius: 0 4px 4px 0;
-                                    width: 18px;
-                                    background: var(--lightgray);
-                                }
-
-                                &:after {
-                                    font-family: "Font Awesome 6 Pro";
-                                    content: "";
-                                    font-weight: 900;
-                                    position: absolute;
-                                    right: 5px;
-                                    color: var(--silver);
-                                    top: 6px;
-                                    z-index: 0;
-                                }
-
-                                i {
-                                    &:before {
-                                        content: '\f089';
-                                    }
+                                    content: '\f089';
                                 }
                             }
                         }
                     }
                 }
             }
-
 
             &--parkinglotScore,
             &--link,
@@ -170,5 +201,6 @@ font-size: 14px;
         }
     }
 }
+
 
 @import 'recordCount';
